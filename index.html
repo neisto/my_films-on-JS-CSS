@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Моё кино</title>
+</head>
+<body>
+    <section class="section">
+        <div class="task-desk">
+            <ol class="ol"></ol>
+        </div>
+        <div class="form-section">
+            <form class="formTask">
+                <input id="1" name="taskName" class="formTask_elements input-film" type="text" placeholder="Введите название">
+                <select id="2" class="formTask_elements select-type" name="typee">
+                    <option value="Фильм">Фильм</option>
+                    <option value="Сериал">Сериал</option>
+                </select>
+                <select id="3" class="formTask_elements select-genre" name="genre">
+                    <option value="Фантастика/Фентези">Фантастика / Фентези</option>
+                    <option value="Ужасы/Триллер">Ужасы / Триллер</option>
+                    <option value="Детектив">Детектив</option>
+                    <option value="Боевик">Боевик</option>
+                    <option value="Драма/Мыло">Драма / Мыло</option>
+                    <option value="Комедии">Комедии</option>
+                    <option value="Вестерн">Вестерн</option>
+                </select>
+                <button class="button-32 save-btn" role="button" disabled>Хочу смотреть</button>
+                <select id="4" class="formTask_elements filter-genre" name="genre-filter">
+                    <option value="Все">Весь список</option>
+                    <option class="yellow-select" value="Сериал">Сериал</option>
+                    <!-- <option class="yellow-select" value="Просмотренные">Просмотренные</option> -->
+                    <option value="Фантастика/Фентези">Фантастика / Фентези</option>
+                    <option value="Ужасы/Триллер">Ужасы / Триллер</option>
+                    <option value="Детектив">Детектив</option>
+                    <option value="Боевик">Боевик</option>
+                    <option value="Драма/Мыло">Драма / Мыло</option>
+                    <option value="Комедии">Комедии</option>
+                    <option value="Вестерн">Вестерн</option>
+                </select>
+            </form>
+            <button class="button-32 filter-btn">Весь список</button>
+
+        </div>
+    </section>
+    <script type="module" src="mainApp.js"></script>
+    <script type="module" src="formData.js"></script>
+    <script type="module" src="listFilm.js"></script>
+    <!-- <script src="localApi.js"></script> -->
+
+</body>
+</html>
